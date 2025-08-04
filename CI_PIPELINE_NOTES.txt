@@ -1,0 +1,27 @@
+CI Pipeline Setup – Notes & Difficulties
+=========================================
+
+1. VS Code Remote SSH setup was tricky
+   - Needed to install OpenSSH on VM
+   - VS Code authentication took long to complete
+
+2. GitHub repo was missing initially
+   - Forgot to create the repo before push
+   - Caused "repository not found" error
+
+3. GitHub Actions didn't recognize my test files
+   - pytest not installed
+   - Then: 0 tests collected
+   - Then: import error due to module not found
+
+4. PYTHONPATH confusion
+   - Needed to add PYTHONPATH=src
+   - Didn't work as a direct command → solved by setting `env` block in YAML
+
+5. Final Fix
+   - Changed import path to: `from python_app.main import greet`
+   - Added `env: PYTHONPATH=src` in `python-ci.yml`
+   - Green pipeline
+
+Tag: v1.0.0
+
