@@ -1,2 +1,8 @@
 -r requirements.txt
+
 pytest
+flake8
+black
+bandit
+mypy
+

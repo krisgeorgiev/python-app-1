@@ -9,6 +9,8 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    env:
+          PYTHONPATH: src
 
     steps:
       - name: Checkout code
@@ -24,9 +26,17 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements-dev.txt
 
+      - name: Lint with flake8
+        run: flake8 src/ tests/
 
-      - name: Run tests
-        env:
-          PYTHONPATH: src
+      - name: Check formatting with black
+        run: black --check src/ tests/
+
+      - name: Run bandit security scan
+        run: bandit -r src/
+
+      - name: Static type check with mypy
+        run: mypy src/
+
+      - name: Run tests with pytest
         run: pytest
-
