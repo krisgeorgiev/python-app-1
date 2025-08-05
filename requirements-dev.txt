@@ -1,8 +1,6 @@
 -r requirements.txt
 
-pytest
-flake8
 black
+flake8
 bandit
 mypy
-
