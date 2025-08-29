@@ -21,5 +21,3 @@ Includes GitHub Actions workflows for linting, testing, and container builds.
 - Dockerfile # Docker build definition
 - requirements.txt # runtime dependencies
 - requirements-dev.txt # dev/test dependencies
-- pyproject.toml # packaging + tooling config
-- setup.py # legacy packaging support
