@@ -1,0 +1,56 @@
+# --- Python ---
+.venv/
+venv/
+ENV/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdm
+*.egg-info/
+.eggs/
+*.manifest
+*.spec
+
+# --- Unit test / coverage ---
+.coverage
+htmlcov/
+.tox/
+.nox/
+pytest_cache/
+.mypy_cache/
+.pytest_cache/
+.cache/
+coverage.xml
+*.cover
+*.log
+
+# --- Jupyter ---
+.ipynb_checkpoints
+*.ipynb
+
+# --- Docker ---
+*.log
+docker-compose.override.yml
+.docker/
+.dockerignore
+.env
+.env.*
+
+# --- Node / frontend ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+dist/
+build/
+
+# --- IDEs / editors ---
+.vscode/
+.idea/
+*.swp
+
+# --- OS files ---
+.DS_Store
+Thumbs.db

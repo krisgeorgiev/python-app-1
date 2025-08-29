@@ -23,5 +23,4 @@ CI Pipeline Setup – Notes & Difficulties
    - Added `env: PYTHONPATH=src` in `python-ci.yml`
    - Green pipeline
 
-Tag: v1.0.0
 
