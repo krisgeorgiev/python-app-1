@@ -14,12 +14,12 @@ Includes GitHub Actions workflows for linting, testing, and container builds.
 ---
 
 ## Project Structure
-.github/workflows/ # CI/CD pipelines
-src/python_app/ # application code
-tests/ # pytest tests
-docs/ # documentation, notes
-Dockerfile # Docker build definition
-requirements.txt # runtime dependencies
-requirements-dev.txt # dev/test dependencies
-pyproject.toml # packaging + tooling config
-setup.py # legacy packaging support
+- .github/workflows/ # CI/CD pipelines
+- src/python_app/ # application code
+- tests/ # pytest tests
+- docs/ # documentation, notes
+- Dockerfile # Docker build definition
+- requirements.txt # runtime dependencies
+- requirements-dev.txt # dev/test dependencies
+- pyproject.toml # packaging + tooling config
+- setup.py # legacy packaging support
